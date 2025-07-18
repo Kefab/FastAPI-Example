@@ -1,5 +1,8 @@
+CREATE DATABASE IF NOT EXISTS example;
 
-CREATE TABLE `champions` (
+USE example;
+
+CREATE TABLE IF NOT EXISTS `champions` (
   `id` int NOT NULL AUTO_INCREMENT,
   `name` varchar(100) NOT NULL,
   `rol` varchar(100) NOT NULL,
@@ -9,9 +12,8 @@ CREATE TABLE `champions` (
   PRIMARY KEY (`id`)
 );
 
--- lol.users definition
 
-CREATE TABLE `users` (
+CREATE TABLE IF NOT EXISTS `users` (
   `id` bigint unsigned NOT NULL AUTO_INCREMENT,
   `username` varchar(50) NOT NULL,
   `email` varchar(100) NOT NULL,
